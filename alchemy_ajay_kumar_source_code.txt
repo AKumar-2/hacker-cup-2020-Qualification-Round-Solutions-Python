@@ -1,0 +1,16 @@
+T = int(input())
+for i in range (1, T+1):
+
+    no_of_shards = int(input())
+    shards_arrangement = input()
+
+    count = 0
+    for j in shards_arrangement:
+        if j == "A":
+            count += 1
+        else:
+            count -= 1
+    if count == 1 or count == -1:
+        print(f"Case #{i}: Y")
+    else:
+        print(f"Case #{i}: N")
